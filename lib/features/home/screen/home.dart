@@ -70,7 +70,7 @@ class HomeScreen extends ConsumerWidget {
                     radius: 50,
                     backgroundImage: NetworkImage(
                       // user.profileImageUrl.toString(),
-                      MyAssets.images.profile.path,
+                      MyAssets.images.profile.keyName,
                     ),
                     backgroundColor: Colors.transparent,
                   ),
@@ -263,7 +263,7 @@ class HomeScreen extends ConsumerWidget {
               ExpandableCard(
                 title: 'Skills',
                 child: Expanded(
-                  child: Image.network(MyAssets.images.skill.path),
+                  child: Image.network(MyAssets.images.skill.keyName),
                 ),
               ),
               const Gap(80),
