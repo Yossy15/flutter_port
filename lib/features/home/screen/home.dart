@@ -68,10 +68,10 @@ class HomeScreen extends ConsumerWidget {
                 children: [
                   CircleAvatar(
                     radius: 50,
-                    backgroundImage: NetworkImage(
+                    backgroundImage: Image.asset(
                       // user.profileImageUrl.toString(),
                       MyAssets.images.profile.keyName,
-                    ),
+                    ).image,
                     backgroundColor: Colors.transparent,
                   ),
                   const Gap(20),
@@ -263,7 +263,7 @@ class HomeScreen extends ConsumerWidget {
               ExpandableCard(
                 title: 'Skills',
                 child: Expanded(
-                  child: Image.network(MyAssets.images.skill.keyName),
+                  child: Image.asset(MyAssets.images.skill.keyName),
                 ),
               ),
               const Gap(80),
