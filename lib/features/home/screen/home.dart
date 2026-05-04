@@ -263,7 +263,9 @@ class HomeScreen extends ConsumerWidget {
               ExpandableCard(
                 title: 'Skills',
                 child: Expanded(
-                  child: Image.asset(MyAssets.images.skill.keyName),
+                  child: 
+                  Image.network('https://raw.githubusercontent.com/Yossy15/game_block/main/assets/images/skill.png')
+                  // Image.asset(MyAssets.images.skill.keyName),
                 ),
               ),
               const Gap(80),
